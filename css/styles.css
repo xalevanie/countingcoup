@@ -143,3 +143,16 @@ img:last-of-type {
 #slide4 {
   background: #222;
 }
+
+
+.nav
+ { background: transparent;
+  text-align: center;
+  color: #fff;
+  padding: (20px null);
+  margin: 20px;
+  position: (fixed,  0px 0px 0px);
+  transition: (transform 1s $ease-in-out-quint);}
+
+.nav.hidden 
+  {transform: translateY(100%);}
