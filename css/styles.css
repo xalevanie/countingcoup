@@ -18,8 +18,24 @@ h1 {
   line-height: 1.6em;
   font-weight: 700;
 }
+/* navigation bar */
+nav {
+    background: blue;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
 
+.nav-up {
+    top: -40px;
+}
 
+header {
+ background-color: red;
+ height: 200px;
+}
 /* parallax crap */
 
 html {
@@ -28,6 +44,7 @@ html {
 }
 
 body { 
+    background-color: #1e0f21;
   margin:0;
   padding:0;
 	perspective: 1px;
@@ -45,7 +62,7 @@ h1 {
 p {
   font-size: 140%;
   line-height: 150%;
-  color: #333;
+  color: white;
 }
 
 .slide {
@@ -58,7 +75,7 @@ p {
 	transform-style: inherit;
 }
 
-img {
+img.gallery {
   position: absolute;
   top: 50%;
   left: 35%;
@@ -71,7 +88,7 @@ img {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-img:last-of-type {
+img.gallery:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(50%) translateY(-40%) rotate(-3deg);
 }
 
@@ -146,13 +163,20 @@ img:last-of-type {
 
 
 .nav
- { background: transparent;
+ { background: blue;
   text-align: center;
   color: #fff;
-  padding: (20px null);
+  padding: 20px null;
   margin: 20px;
-  position: (fixed,  0px 0px 0px);
-  transition: (transform 1s $ease-in-out-quint);}
+  position: fixed, null 0px 0px 0px;
+  transition: transform 1s $ease-in-out-quint;}
+
+#navhide {
+    height: 2em;
+}
+#navlogo {
+    max-width: 5%;
+}
 
 .nav.hidden 
   {transform: translateY(100%);}
