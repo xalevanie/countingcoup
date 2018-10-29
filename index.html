@@ -1,82 +1,149 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> Counting Coup Media | PNW </title>
-    
-    <!-- Semantic UI -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/semantic.css">
-    
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<nav class="nav-down"> <p>Navstuff</p>
-    </nav>
-   
-   <header><h1><img id="navlogo" src="img/CCMtempLogo.svg" alt="">Counting Coup Media</h1>
-    </header>
-    
+<hmtl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Counting Coup Media</title>
+        
+<!--        Semantic UI     -->
+       <link rel="stylesheet" href="css/semantic.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 <body>
+        
+          <!-- svg is defined here because of a Safari bug with <use> -->
+  <svg>
+    <defs>
+      <g id="p">
+        <path opacity=".2" d="M0 2h252s-3.3 40.7-2.7 128.3C249 216 252 272 252 272s-88-2-124.3-2C91.3 270 0 272 0 272V0z"/><path fill="#f4f3f1" d="M0 0h248v270H0z"/><path fill="#4f5150" d="M8 10h233v203H8z"/>
+      </g>
+      <g id="polaroid">
+        <use xlink:href="#p" transform="rotate(15)" x="175" y="50"/>
+        <use xlink:href="#p" transform="rotate(-5)" x="5" y="25"/>
+      </g>
+    </defs>
+  </svg>
 
+  
 
-    
-<div id="title" class="slide header">
-  <h1>A Production Company</h1>
-  <p>A Native owned cool beans company of coolness. We like to talk ourselves up and repeat it over and over again. Don't tell anyone. Tell EVERYONE.</p>
-</div>
+  <div class="slides">
+    <div class="slide" id="slide-1">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-1-title">To PReserve the Past and Share with the Future</h1>
+          <p>We tell first nation stories. We're a group of ambitious film makers and animators who are fixated on bringing a new kind of quality and style to the Native community. With ten years experience we're able to handle any project that comes our way.</p>
+        </div>
+        <div class="slide__image">
+          <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+        </div>
+      </div>
+    </div>
 
-<div id="slide1" class="slide">
-  <div class="title">
-    <h1>To Preserve the Past and Share with the Future</h1>
-    <p>We tell first nation stories. We're a group of ambitious film makers and animators who are fixated on bringing a new kind of quality and style to the Native community. With ten years experience we're able to handle any project that comes our way. </p>
-    <p>We tell first nation stories. We're a group of ambitious film makers and animators who are fixated on bringing a new kind of quality and style to the Native community. With ten years experience we're able to handle any project that comes our way. </p><p>We tell first nation stories. We're a group of ambitious film makers and animators who are fixated on bringing a new kind of quality and style to the Native community. With ten years experience we're able to handle any project that comes our way. </p>
+    <div class="slide" id="slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-2-title">Video</h1>
+          <p>High Quality Video, expertly lit and color controlled by well trained eyes. Take your video to the next level with Counting Coup Media's professional touch!</p>
+          <p>Roots are a big thing for us. We believe where we come from is important and we live up to that everyday. Being Native owned is a badge of honor that we proudly carry into every project.</p>
+        </div>
+        <div class="slide__image">
+          <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-3">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-3-title">Animation</h1>
+          <p>A good animation should provoke thought and serve the greater story.
+With a free consultation we'll gather all necessary information about
+you and your company to execute a project that's the right amount of cool
+and sleek to impress any client or customer.</p>
+          <p>IN the end it doesn't really matterrrr</p>
+        </div>
+        <div class="slide__image">
+          <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-4">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-4-title">Slide 4 title</h1>
+          <p>We take pride in creating photography that will give you a lasting
+memory that will follow you through the years. Our favorite part
+of this process is listening to what you have to say
+so we can create that photos that you'll not only want but cherish
+for the rest of your life. Call or email for rates.</p>
+       <h2> Wedding </h2>
+       <p> We work with you on making your special day as memorable as possible. With competitive rates we take pride in not only quality but customer service. We also do wedding videography as well. </p>
+        <h2> Corporate Photography </h2>
+       <p> We love doing corporate shoots. More than that we
+love making the companies we work with look as good as possible. It's important that their customers know that they take pride in what they do and are not afraid to invest in their marketing.</p>
+        <h2>Senior Pictures </h2>
+       <p> If your senior wants some photography to stand out from the rest let us know. If your senior just wants some nice photography in the outdoors dressed in their Sunday best we do that as well. Just give us a holler. </p>
+        <h2> Fashion </h2>
+       <p> DAmmit guys</p>
+       <h2>Product</h2>
+       <h2> Real Estate</h2>
+       <h2>Cinematic </h2>
+        </div>
+        <div class="slide__image">
+          <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-5">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-5-title">Slide 5 title</h1>
+          <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+        </div>
+        <div class="slide__image">
+          <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-6">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-6-title">Let's bring it to life.</h1>
+          <p>Bring your ideas to life - contacts us today yesh</p>
+        </div>
+        <div class="slide__image">
+          <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<div id="slide2" class="slide">
-  <div class="title">
-    <h1>Photography</h1>
-    <p>Wedding, corporate, product, you name it, we can overexpose it.</p>
-  </div>
-  <img class="gallery" src="/img/feathers.JPG">
-  <img class="gallery" src="img/Band.JPG"> 
-</div>
-
-<div id="slide3" class="slide">
-  <div class="title">
-    <h1>Animation</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-<div id="slide4" class="slide header">
-    <h1>Contact us and stuff</h1>
-</div>
-
-
-    
-    
-    
-    
-    
-
-    <!--        SCRIPTS     -->
+     
+      <nav>
+    <ul class="nav">
+      <li><a href="#slide-1">Home</a></li>
+      <li><a href="#slide-2">Video</a></li>
+      <li><a href="#slide-3">Animation</a></li>
+      <li><a href="#slide-4">Photography</a></li>
+      <li><a href="#slide-5">Unknown</a></li>
+      <li><a href="#slide-6">Contact Us</a></li>
+    </ul>
+  </nav>  
+        
+<!--        SCRIPTS     -->
     <!--    jquery   -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- semantic ui -->
 <script src="js/semantic.js"></script>
 <!--    Our scripts -->
-<script src="js/scripts.js"></script> 
-
+<script src="js/scripts.js"></script>
 </body>
-</html>
+</hmtl>
