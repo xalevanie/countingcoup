@@ -105,13 +105,12 @@ padding-top: 0;}
 /* slide backgrounds */
 
 #slide-1 .slide__bg {
-  background-image: url("../img/Everyday2.JPG");
-    transform: rotate(-90deg);
-    background-color: #cccccc; /* Used if the image is unavailable */
-  width: 100%; /* You must set a specified height */
-  background-position: center top; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: repeating-linear-gradient(
+    rgb(153, 216, 101),
+    rgb(153, 216, 101) 30px,
+    rgb(133, 196, 81) 30px,
+    rgb(133, 196, 81) 60px
+  );
   
 }  
 
