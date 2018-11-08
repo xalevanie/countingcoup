@@ -53,6 +53,12 @@ h2 {
     color: yellow;
 }
 
+#slide-1-title {
+    font-size: 5.5em;
+    font-weight: 500;
+    margin-top: -1.25em;
+}
+
 /* Nav Function------------*/
 
 
@@ -214,9 +220,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
     -webkit-order: 1;
     order: 1;
   }
-  .nav {
-    display: block;
-  }
+  
 
 
   /* parallax */
@@ -272,5 +276,3 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
     }
   }
 }
-
-menu {position: static;}
