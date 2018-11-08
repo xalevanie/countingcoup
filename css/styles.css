@@ -1,49 +1,64 @@
 /* Stylesheet*/
 
 
-font-family: 'Oswald', sans-serif;
-font-family: 'Anton', sans-serif; 
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif; */
+html {
+    height: 100%;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
+
   padding: 0;
   padding-top: 0;
   color: blue;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Typography
+--------------------------------------------- */ 
+
 h1, p {
   margin-bottom: 1.5em;
 }
 
-/* Typography
---------------------------------------------- */
+
 p {
-    color: ghostwhite;
-font-family: Oswald;
+    color: white;
+font-family: Montserrat;
     font-weight: 300;
 }
 
 .sub {
-    color: green;
+    color: orangered;
     font-weight: 500;
 }
 
 h1 {
     font-family: Oswald;
     font-weight: 500;
-    color: orangered;
+    color: White;
 }
 h2 {
     font-family: Oswald;
     font-weight: 300;
-    color: pink;
+    color: yellow;
 }
 
+/* Nav Function------------*/
 
 
 
-
+/* Nav look------------*/
 
 nav {margin-top: 0;
 padding-top: 0;}
@@ -78,10 +93,10 @@ padding-top: 0;}
 
 .slide {
   position: relative;
-  padding: 8% 0;
+  padding: 3% 0;
 }
 .slide__content {
-  max-width: 1200px;
+  max-width: 77%;
   margin: auto;
 }
 .slide__text, .slide__image {
@@ -105,76 +120,41 @@ padding-top: 0;}
 /* slide backgrounds */
 
 #slide-1 .slide__bg {
-  background-image: repeating-linear-gradient(
-    rgb(153, 216, 101),
-    rgb(153, 216, 101) 30px,
-    rgb(133, 196, 81) 30px,
-    rgb(133, 196, 81) 60px
-  );
-  
+   background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+/*  background-image: url("../img/CCMtempLogo.svg");*/
+/*    transform: rotate(-90deg);
+    background-color: #cccccc;  
+  width: 100%;  
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;  Resize the background image to cover the entire container */
+    
 }  
 
 #slide-2 .slide__bg {
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgb(133, 173, 230),
-    rgb(133, 173, 230) 30px,
-    rgb(113, 153, 210) 30px,
-    rgb(113, 153, 210) 60px
-  );
+  background: #004340;
+  
 }
 #slide-3 .slide__bg {
-  background-image: repeating-linear-gradient(
-    rgb(153, 216, 101),
-    rgb(153, 216, 101) 30px,
-    rgb(133, 196, 81) 30px,
-    rgb(133, 196, 81) 60px
-  );
+  background: #002829;
 }
 #slide-4 .slide__bg {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    rgb(133, 193, 230),
-    rgb(133, 193, 230) 30px,
-    rgb(113, 173, 210) 30px,
-    rgb(113, 173, 210) 60px
-  );
+  background: #002829;
 }
 #slide-5 .slide__bg {
-  background-image: url("../img/Everyday2.JPG");
-    transform: rotate(-90deg);
-    background-color: #cccccc; /* Used if the image is unavailable */
-  width: 100%; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background: black;
 }
 #slide-6 .slide__bg {
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgb(133, 213, 230) 0px,
-    rgb(133, 213, 230) 30px,
-    rgb(113, 193, 210) 30px,
-    rgb(113, 193, 210) 60px
-  );
+  background: black;
 }
 
 #slide-7 .slide__bg {
-  background-image: repeating-linear-gradient(
-    rgb(214, 229, 100),
-    rgb(214, 229, 100) 30px,
-    rgb(194, 209, 80) 30px,
-    rgb(194, 209, 80) 60px
-  );
+  background: green;
 }
 #slide-8 .slide__bg {
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgb(133, 213, 230) 0px,
-    rgb(133, 213, 230) 30px,
-    rgb(113, 193, 210) 30px,
-    rgb(113, 193, 210) 60px
-  );
+  background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 
@@ -203,6 +183,9 @@ padding-top: 0;}
   .nav {
     display: block;
   }
+    menu { position: fixed;
+        height: 60px;
+        z-index: 9;}
 
   /* parallax */
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
@@ -257,3 +240,5 @@ padding-top: 0;}
     }
   }
 }
+
+menu {position: static;}
