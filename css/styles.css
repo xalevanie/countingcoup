@@ -3,9 +3,7 @@
 
 /*font-family: 'Oswald', sans-serif;*/
 /*font-family: 'Montserrat', sans-serif; */
-html {
-    height: 100%;
-}
+
 
 * {
   box-sizing: border-box;
@@ -69,11 +67,11 @@ list-style: none;
 .nav {
   position: absolute;
   z-index: 100;
-bottom: 0;
+bottom: -15px;
+    padding: 0;
   display: table;
     margin: 1rem auto;
-    padding
-        background:black;
+    background: rgb( 0,0,0,.5);
     width: 100%;
     
 }
@@ -87,27 +85,41 @@ bottom: 0;
 }
 .nav a {
   padding: 1em 1em;
+    font-size: 1.5em;
   color: orangered;
     text-align: center;
     text-decoration: overline;
+    font-family: Oswald;
+    font-weight: 500;
+    padding-bottom: 2em;
+    padding-top: -20px;
+    
     
     
 }
 .nav a:not(:hover) {
-  text-decoration: none;
     color:white;
     text-decoration: none; 
+    font-family: Oswald;
+    font-weight: 300;
+    
 }
 
 #navlogo {
     position: relative;
-    width: 10%;
-    margin-bottom: -50px; 
-    padding: 40px; 
+    width: 20%;
+    min-width: 255px;
+    max-width: 255px;
+    opacity: .7;
+    padding-right:   5em  ;
+    padding-left:   5em  ;
 }
 
 #navlogo:hover {
-    opacity: 0;
+    opacity: 1;
+    width: 1%;
+    padding-right:   4em  ;
+    padding-left:   4em  ;
 }
 
 /* slide layout
@@ -155,7 +167,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 }  
 
 #slide-2 .slide__bg {
-  background: #004340;
+  background: transparent;
   
 }
 #slide-3 .slide__bg {
