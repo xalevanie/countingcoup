@@ -6,12 +6,11 @@
 
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 
-  padding: 0;
-  padding-top: 0;
-  color: blue;
+    padding: 0;
+    padding-top: 0;
     min-width: 20%;
 }
 
@@ -20,32 +19,36 @@
     right: 0;
     bottom: 0;
     min-width: 100%; 
-    min-height: 100%;
+    min-height: 80%;
 }
 
 /* Typography
 --------------------------------------------- */ 
 
-h1, p {
-  margin-bottom: 1.5em;
-}
-
-
 p {
     color: white;
-font-family: Montserrat;
-    font-weight: 300;
+    font-family: montserrat;
+    font-weight: 500;
+    margin-right: 35%;
+    margin-left: -10%;
+    font-size: 1.1em;
 }
 
 .sub {
     color: orangered;
     font-weight: 500;
+    font-family: Oswald;
+    font-size: 3em;
+    padding:5%;
+    text-align: justify;
 }
 
 h1 {
     font-family: Oswald;
     font-weight: 500;
     color: White;
+    margin-right: 10%;
+    margin-left: -15%;
 }
 h2 {
     font-family: Oswald;
@@ -54,51 +57,55 @@ h2 {
 }
 
 #slide-1-title {
-    font-size: 5.5em;
-    font-weight: 500;
-    margin-top: -1.25em;
+    font-size: 6em;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: -16px;
 }
-
-/* Nav Function------------*/
-
-
+#slide-1-title2 {
+    font-size: 6em;
+    font-weight: 500;
+}
+#slide-2-title {
+    font-size: 5.2em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 16px;
+}
 
 /* Nav look------------*/
 
-nav {margin-top: 0;
-padding-top: 0;
-list-style: none;
-   text-align: center;}
+nav { 
+   margin-top: 0;
+   padding-top: 0;
+   list-style: none;
+   text-align: center;
+}
 
 .nav {
-  position: absolute;
-  z-index: 100;
-bottom: -15px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
     padding: 0;
-  display: table;
+    display: table;
     margin: 1rem auto;
     background: rgb( 0,0,0,.5);
-    width: 100%;
-    
+    width: 100%;  
 }
 .nav li {
-
-  list-style: none;
-  margin: .5em;
+    list-style: none;
+    margin: .5em;
     display: inline;
-    
-    
 }
+
 .nav a {
-  padding: 1em 1em;
+    padding: 1em 1em;
     font-size: 1.5em;
-  color: orangered;
+    color: orangered;
     text-align: center;
     text-decoration: overline;
     font-family: Oswald;
     font-weight: 500;
-    padding-bottom: 2em;
-    padding-top: -20px;
     
     
     
@@ -128,6 +135,10 @@ bottom: -15px;
     padding-left:   4em  ;
 }
 
+/* Nav Function------------*/
+
+
+
 /* slide layout
 --------------------------------------------- */
 
@@ -141,6 +152,7 @@ bottom: -15px;
 }
 .slide__text, .slide__image {
   padding: 8%;
+    
 }
 .slide__image svg {
   display: block;
@@ -161,44 +173,52 @@ bottom: -15px;
 
 #slide-1 .slide__bg {
    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-/*  background-image: url("../img/CCMtempLogo.svg");*/
-/*    transform: rotate(-90deg);
-    background-color: #cccccc;  
-  width: 100%;  
-  background-position: center;  
-  background-repeat: no-repeat; 
-  background-size: cover;  Resize the background image to cover the entire container */
-    
+
 }  
 
 #slide-2 .slide__bg {
-  background: transparent;
-  
+ background: linear-gradient(0deg,rgba(0,0,0,1) 93%, rgba(255,255,255,0) 100% );
+    
 }
 #slide-3 .slide__bg {
-  background: #002829;
+  background: blue;
+    
 }
+
 #slide-4 .slide__bg {
-  background: #002829;
+  background: yellow;
+    
 }
+
 #slide-5 .slide__bg {
-  background: black;
+  background: green;
 }
+
 #slide-6 .slide__bg {
-  background: black;
+  background: orange;
 }
 
 #slide-7 .slide__bg {
-  background: green;
+  background: red;
 }
+
 #slide-8 .slide__bg {
   background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 }
 
+#slide-1 {
+/*    margin-top: 450px;*/
+    top: 0;
+    padding-bottom: 30em;
+    margin-top: -2em;
+}
 
-
+#slide-2 {
+/*    margin-top: 450px;*/
+    top: -150px;
+    padding-bottom: 1.2em;
+}
 
 
 /* Large screen layout
@@ -246,12 +266,13 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
       transform-style: preserve-3d;
     }
     .slide__text {
-      transform: translateZ(60px) scale(.8);
-      transform-origin: 100% 50%;
+      transform: translateZ(50px) scale(.8);
+      transform-origin: 100% 190%;
     }
     .slide:nth-child(2n) .slide__image {
       transform: translateZ(100px) scale(.67);
       transform-origin: 100% 50%;
+        
     }
     .slide:nth-child(2n) .slide__text {
       transform-origin: 0% 50%;
