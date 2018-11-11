@@ -103,9 +103,8 @@ nav {
     bottom: 0;
     padding: 0;
     display: table;
-    margin: 1rem auto;
-    background: rgb( 0,0,0,.5);
-    width: 100%;  
+    width: 100%; 
+    padding-bottom: 1em; 
 }
 .nav li {
     list-style: none;
@@ -114,13 +113,15 @@ nav {
 }
 
 .nav a {
-    padding: 1em 1em;
-    font-size: 1.5em;
+    padding: .8em .8em;
+    font-size: 2em;
     color: orangered;
     text-align: center;
     text-decoration: overline;
     font-family: Oswald;
-    font-weight: 500;
+    font-weight: 300;
+    opacity: 1;
+    
     
     
     
@@ -130,24 +131,34 @@ nav {
     text-decoration: none; 
     font-family: Oswald;
     font-weight: 300;
+    opacity: .7;
     
 }
 
 #navlogo {
     position: relative;
-    width: 20%;
-    min-width: 255px;
-    max-width: 255px;
-    opacity: .7;
-    padding-right:   5em  ;
-    padding-left:   5em  ;
-}
+    min-width: 55px;
+    max-width: 200px;
+    opacity: 1;
+    padding-right:   1em  ;
+    padding-left:   1em  ;
+    
+    margin-bottom: -.7em;
+    }
 
 #navlogo:hover {
+    opacity: 0;
+    margin-bottom: -10px;
+    
+}
+
+.logogo:hover {
+    background-image: url(../img/semi-sticker_orange.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -70% center;
+    background-size: 60%;
     opacity: 1;
-    width: 1%;
-    padding-right:   4em  ;
-    padding-left:   4em  ;
+    
 }
 
 /* Nav Function------------*/
