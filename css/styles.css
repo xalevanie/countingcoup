@@ -21,16 +21,22 @@
     min-height: 80%;
 }
 
+#craycray {width: ;
+margin-top: -20%;
+    fill: red;
+}
+
 /* Typography
 --------------------------------------------- */ 
 
 p {
-    color: white;
+    color: darkgrey;
     font-family: montserrat;
     font-weight: 500;
-    margin-right: 35%;
-    margin-left: -10%;
+    text-align: left;
     font-size: 1.3em;
+    margin-left: 13%;
+    
 }
 
 .sub {
@@ -38,16 +44,16 @@ p {
     font-weight: 500;
     font-family: Oswald;
     font-size: 3em;
-    padding:5%;
-    text-align: justify;
+    padding:1%;
+    
+    margin-left: -10%;
 }
 
 h1 {
     font-family: Oswald;
     font-weight: 500;
     color: White;
-    margin-right: 10%;
-    margin-left: -15%;
+    
 }
 h2 {
     font-family: Oswald;
@@ -60,16 +66,26 @@ h2 {
     font-weight: 300;
     margin-top: 1em;
     margin-bottom: -16px;
+    margin-right: 10%;
+    margin-left: -15%;
 }
 #slide-1-title2 {
     font-size: 6em;
     font-weight: 500;
+    margin-right: 10%;
+    margin-left: -15%;
 }
 #slide-2-title {
-    font-size: 5.2em;
+    font-size: 5em;
     font-weight: 500;
     margin-top: 1em;
     margin-bottom: 16px;
+    color: whitesmoke;
+    text-decoration: overline;
+    margin-left: 13%;
+    margin-right: -10%;
+    
+    
 }
 
 /* Nav look------------*/
@@ -150,7 +166,7 @@ nav {
   margin: auto;
 }
 .slide__text, .slide__image {
-  padding: 8%;
+  padding: 0%;
     
 }
 .slide__image svg {
@@ -202,8 +218,7 @@ nav {
 }
 
 #slide-8 .slide__bg {
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+background: transparent;
 }
 
 #slide-1 {
@@ -265,7 +280,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
       transform-style: preserve-3d;
     }
     .slide__text {
-      transform: translateZ(50px) scale(.8);
+      transform: translateZ(60px) scale(.8);
       transform-origin: 100% 190%;
     }
     .slide:nth-child(2n) .slide__image {
