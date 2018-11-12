@@ -41,11 +41,6 @@ p {
     
 }
 
-#p3 {
-    margin-left: 0%;
-    margin-right: 20%;
-    margin-top: 1em;
-}
 
 .sub {
     color: orangered;
@@ -104,9 +99,9 @@ h2 {
 }
 
 #slide-3-title {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 500;
-    margin-top:-2em;
+    margin-top:-4em;
     margin-right: 10%;
     margin-left: -15%;
 }
@@ -283,8 +278,8 @@ background: transparent;
 #slide-2 {
 /*    margin-top: 450px;*/
     top: -150px;
-    padding-top: 10em;
-    padding-bottom: 12em;
+    padding-top: 12em;
+    padding-bottom: 16em;
 }
 
 #slide-3 {
