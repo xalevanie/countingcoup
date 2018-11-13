@@ -57,7 +57,7 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.blues {color:turquoise;
+.blues {color:darkturquoise;
 font-weight: 500;}
 
 
@@ -117,6 +117,13 @@ h2 {
 }
 
 #slide-4 p {padding-right:.8em;}
+
+#smallerp {color: darkturquoise;
+    font-weight: 300;
+    padding-left: 9em;
+    font-size-adjust: .5em;
+    
+}
 
 
 /* Nav look------------*/
