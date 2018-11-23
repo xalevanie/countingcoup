@@ -21,12 +21,9 @@
     min-height: 80%;
 }
 
-#craycray {width: 900px;
-margin-top: -20%;
-    
-}
 
-/* Typography
+
+/* General Typography
 --------------------------------------------- */ 
 
 p {
@@ -34,96 +31,31 @@ p {
     font-family: montserrat;
     font-weight: 300;
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-left: 13%;
     margin-right: 3%;
-   
-    
+    text-size-adjust: none;
 }
-
-
-.sub {
-    color: orangered;
-    font-weight: 500;
-    font-family: Oswald;
-    font-size: 3.5em;
-    padding:1%;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    padding-left: 3em;
-    margin-left: -35%;
-    margin-right: -10%; 
-    background-image: url(../img/sticker_dark.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.blues {color:darkturquoise;
-font-weight: 500;}
-
-
 h1 {
     font-family: Oswald;
     font-weight: 500;
     color: White;
-    
+    text-size-adjust: auto;
 }
 h2 {
     font-family: Oswald;
     font-weight: 300;
     color: yellow;
+    text-size-adjust: none;
 }
 
-#slide-1-title {
-    font-size: 6em;
-    font-weight: 300;
-    margin-top: 1em;
-    margin-bottom: -16px;
-    margin-right: 10%;
-    margin-left: -15%;
-}
-#slide-1-title2 {
-    font-size: 6em;
-    font-weight: 500;
-    margin-right: 10%;
-    margin-left: -15%;
-}
-#slide-2-title {
-    font-size: 5em;
-    font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 16px;
-    color: whitesmoke;
-    text-decoration: overline;
-    margin-left: 13%;
-    margin-right: -10%;
-}
 
-#slide-3-title {
-    font-size: 4em;
-    font-weight: 500;
-    margin-top:-4em;
-    margin-right: 10%;
-    margin-left: -15%;
-}
 
-#slide-4-title {
-    font-size: 5em;
-    font-weight: 500;
-    margin-top: -1.5em;
-    margin-right: 11%;
-    margin-left: 13%;
-    color: darkred;
-    text-decoration: overline;
-}
 
-#slide-4 p {padding-right:.8em;}
 
-#smallerp {color: darkturquoise;
-    font-weight: 300;
-    padding-left: 9em;
-    font-size-adjust: .5em;
-    
-}
+
+
+
 
 
 /* Nav look------------*/
@@ -144,6 +76,7 @@ nav {
     width: 100%; 
     padding-bottom: 1em; 
 }
+
 .nav li {
     list-style: none;
     margin: .5em;
@@ -160,18 +93,15 @@ nav {
     font-weight: 300;
     opacity: 1;
     text-shadow: 2px 2px 2px rgb(0,0,0, .9);
-    
-    
-    
-    
+    margin-bottom: 90px;
 }
+
 .nav a:not(:hover) {
     color:white;
     text-decoration: none; 
     font-family: Oswald;
     font-weight: 300;
     opacity: .7;
-    
 }
 
 #navlogo {
@@ -179,16 +109,14 @@ nav {
     min-width: 55px;
     max-width: 200px;
     opacity: 1;
-    padding-right:   1em  ;
-    padding-left:   1em  ;
-    
+    padding-right: 1em  ;
+    padding-left: 1em  ;
     margin-bottom: -.7em;
-    }
+}
 
 #navlogo:hover {
     opacity: 0;
     margin-bottom: -10px;
-    
 }
 
 .logogo:hover {
@@ -197,16 +125,11 @@ nav {
     background-position: bottom -70% center;
     background-size: 60%;
     opacity: 1;
-    
 }
 
-/* Nav Function------------*/
 
-
-
-/* slide layout
+/* Overall slide layouts
 --------------------------------------------- */
-
 .slide {
   position: relative;
   padding: 3% 0;
@@ -234,91 +157,9 @@ nav {
   z-index: -1;
 }
 
-/* slide backgrounds */
-
-#slide-1 .slide__bg {
-   background: rgb(0,0,0);
-
-}  
-
-#slide-2 .slide__bg {
-    
- background: linear-gradient(0deg,rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%);
-    
-}
-#slide-3 {
-  background-image: url(../img/standalone.webp);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin-top: 3em;
-    
-}
-
-#slide-4 .slide__bg {
-  background: linear-gradient(0deg,rgba(0,0,0,0) 0%, rgba(20,0,0,1) 60%, rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%);
-   margin-top: -4em; 
-}
-
-#slide-5 .slide__bg {
-  background: black;
-}
-
-#slide-6 .slide__bg {
-  background: black;
-}
-
-#slide-7 .slide__bg {
-    background: white;
-  
-}
-
-#slide-8 .slide__bg {
-background: transparent;
-     background-image: url(../img/tryline-01.svg);
-    background-size: 100%;
-    margin: auto;
-    margin-top: -2em;
-    margin-bottom: 4em;
-    background-position: bottom center;
-    
-}
-
-#slide-1 {
-/*    margin-top: 450px;*/
-    top: 0;
-    padding-bottom: 30em;
-    margin-top: -2em;
-}
-
-#slide-2 {
-/*    margin-top: 450px;*/
-    top: -150px;
-    padding-top: 12em;
-    padding-bottom: 16em;
-}
-
-#slide-3 {
-   
-    top: -50px;
-    padding-bottom: 15em;
-}
-
-#slide-8 p {
-    color:black;
-}
-#slide-8 h1 {
-    color:black;
-}
-#slide-8 .slide__image {
-   
-}
-
-
 
 /* Large screen layout
 --------------------------------------------- */  
-
 @media screen and (min-width: 30em) {
 
   .slide__content {
@@ -336,8 +177,6 @@ background: transparent;
     order: 1;
   }
   
-
-
   /* parallax */
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
 
@@ -394,37 +233,193 @@ background: transparent;
 }
 
 
+/*SLIDES bg, type bits, the rest 
+-------------------------------------*/
+
+/*Slide 1 Top Video*/
+#slide-1-title {
+    font-size: 6rem;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: -16px;
+    margin-right: 10%;
+    margin-left: -15%;
+}
+
+#slide-1-title2 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin-right: 10%;
+    margin-left: -15%;
+}
+
+#slide-1 .slide__bg {
+   background: rgb(0,0,0);
+
+} 
+
+#slide-1 {
+    top: 0;
+    padding-bottom: 30em;
+    margin-top: -2em;
+}
 
 
+/*Slide 2 CoCoMe Intro*/
+#slide-2-title {
+    font-size: 4.5em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 16px;
+    color: whitesmoke;
+    text-decoration: overline;
+    margin-left: 13%;
+    margin-right: -10%;
+}
 
-/* Crew slide*/
+#slide-2 .slide__bg {
+    
+ background: linear-gradient(0deg,rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%);
+    
+}
+#slide-2 {
+    top: -150px;
+    margin-top: -2em;
+    padding-top: 8em;
+    padding-bottom: 18em;
+}
+
+.sub {
+    color: orangered;
+    font-weight: 500;
+    font-family: Oswald;
+    font-size: 3.2em;
+    padding: 3em;
+   
+    margin-left: -25%;
+    margin-right: -10%; 
+    background-image: url(../img/sticker_dark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.blues {
+    color:darkturquoise;
+    font-weight: 500;
+}
+
+
+/*Slide 4 RedRoad */
+#slide-4-title h1 {color:white;
+    font-size: .35em;
+    margin-left: 0.5%;
+    margin-bottom: -2%;
+}
+#slide-4-title {
+    font-size: 10em;
+    font-weight: 500;
+    margin-top: -1.5em;
+    padding-top: 50px;
+    margin-right: 11%;
+    margin-left: -13%;
+    color: darkred;
+}
+
+
+#slide-4 p {margin-right:}
+
+#slide-4 .slide__bg {
+  background: linear-gradient(0deg,rgba(0,0,0,0) 0%, rgba(20,0,0,1) 60%, rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%);
+    background-image: url(../img/redroad.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    margin-top:-10em;
+    margin-bottom: -10rem;
+}
+
+#slide-4 .slide__image {
+    margin: 5em;
+}
+
+#slide-4 .slide__text {
+    background: rgb(0,0,0, 0.5);
+    position: fixed;
+    display: flex;
+    width: ;
+    padding: 7em;
+}
+
+#smallerp {color: darkturquoise;
+    font-weight: 300;
+    padding-left: 9em;
+    font-size-adjust: .5em;
+}
+
+/*Slide 3 Video Start*/
+#slide-3-title {
+    font-size: 4em;
+    font-weight: 500;
+    margin-top:-4em;
+    margin-right: 10%;
+    margin-left: -15%;
+}
+
+
+#slide-3 {
+    background-image: url(../img/standalone.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 30em;
+    padding-top: -5em;
+    padding-bottom: 15em;
+}
+
+
+/*Slide 5 more film/animation*/
+#slide-5 .slide__bg {
+  background: black;
+}
+
+
+/*Slide 6 Photographyish*/
+#slide-6 .slide__bg {
+  background: black;
+}
+
+
+/* Slide 7 Crew slide*/
+#slide-7 .slide__bg {
+    background: white;
+  }
+
 #crew {
     position: relative;
     display: inline-flex;
     margin-left: -30%;
     margin-right: -30%;
 }
+
 .grayscale {
     margin: 1em;
     height: 100%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     border-radius: 10%;
-    border-color: green;
+    border-color: white;
     border-style: solid;
     border-width: 1em;
     object-fit: cover;
-    
 }
 
 .grayscale:hover {
-    transform: scale(1%);
-    
+    transform: scale(5%);
 }
 
 .img__wrap {
     position: relative;
-    width: 100%;
+    width: 1%;
 }
 
 .img__description {
@@ -433,16 +428,39 @@ background: transparent;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 43, 65, 0.5);
   color: #fff;
   visibility: hidden;
   opacity: 0;
-
-  /* transition effect. not necessary */
   transition: opacity .5s, visibility .5s;
 }
 
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
+}
+
+
+/*slide-8 Contact slide*/
+#slide-8 .slide__bg {
+background: transparent;
+     background-image: url(../img/tryline-01.svg);
+    background-size: 100%;
+    margin: auto;
+    margin-top: -2em;
+    margin-bottom: 4em;
+    background-position: bottom center;
+    
+}
+
+#slide-8 p {
+    color:blue;
+}
+
+#slide-8 h1 {
+    color:black;
+}
+
+#slide-8 .slide__image {
+   
 }
