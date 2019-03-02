@@ -31,7 +31,7 @@ p {
     font-family: montserrat;
     font-weight: 300;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-left: 13%;
     margin-right: 3%;
     text-size-adjust: none;
@@ -293,8 +293,9 @@ nav {
     color: orangered;
     font-weight: 500;
     font-family: Oswald;
-    font-size: 3.2em;
-    padding: 3em;
+    font-size: 2.8em;
+    padding: 2em;
+    padding-right: 3.5em;
    
     margin-left: -25%;
     margin-right: -10%; 
@@ -391,22 +392,25 @@ nav {
 
 /* Slide 7 Crew slide*/
 #slide-7 .slide__bg {
-    background: white;
+    background: black;
   }
 
 #crew {
     position: relative;
-    display: inline-flex;
-    margin-left: -30%;
-    margin-right: -30%;
+     display:inline-flex;
+    
+    margin-left: -3%;
+    margin-right: %;
 }
 
 .grayscale {
-    margin: 1em;
-    height: 100%;
+   
+    margin: 5em;
+    height: 20rem;
+    width: 20rem;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    border-radius: 10%;
+    border-radius: 50%;
     border-color: white;
     border-style: solid;
     border-width: 1em;
@@ -414,7 +418,7 @@ nav {
 }
 
 .grayscale:hover {
-    transform: scale(5%);
+    transform: scale(10%);
 }
 
 .img__wrap {
@@ -443,22 +447,22 @@ nav {
 
 /*slide-8 Contact slide*/
 #slide-8 .slide__bg {
-background: transparent;
+background: crimson;
      background-image: url(../img/tryline-01.svg);
     background-size: 100%;
     margin: auto;
-    margin-top: -2em;
+    margin-top: -1em;
     margin-bottom: 4em;
-    background-position: bottom center;
+    background-position: bottom left;
     
 }
 
 #slide-8 p {
-    color:blue;
+    color: white;
 }
 
 #slide-8 h1 {
-    color:black;
+    color:blue;
 }
 
 #slide-8 .slide__image {
