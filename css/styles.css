@@ -469,11 +469,10 @@ background: crimson;
    
 }
 
-@media (min-width: 786px) { body { background-color: green; 
+@media (min-width: 1443px) { body { background-color: green; 
     }}
-@media (max-width: 785px) { body { background-color: lightpink; }}
+@media (max-width: 1442px) { body { background-color: lightpink; }}
 @media (max-width: 480px) {
     body { background-color: cadetblue;} 
     p {font-size: 30px;}
     }
-}
