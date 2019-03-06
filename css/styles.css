@@ -68,7 +68,7 @@ nav {
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     bottom: 0;
     padding: 0;
@@ -476,7 +476,7 @@ background: black;
    
 }
 
-@media screen and (max-width: 479px ) { body { background-color: green; 
+/*@media screen and (max-width: 479px ) { body { background-color: green; 
     }}
 /*@media (max-width: 479px) {
     body { background-color: cadetblue;} 
