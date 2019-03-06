@@ -392,7 +392,9 @@ nav {
 
 /* Slide 7 Crew slide*/
 #slide-7 .slide__bg {
-    background: black;
+    background: teal;
+    background-image: url(../img/tryline-01.svg);
+    background-repeat: no-repeat;
   }
 #slide-7 .slide__image {display: inline-block;}
 
@@ -447,13 +449,11 @@ nav {
 
 /*slide-8 Contact slide*/
 #slide-8 .slide__bg {
-background: crimson;
-     background-image: url(../img/tryline-01.svg);
-    background-size: 100%;
+background: black;
     margin: auto;
-    margin-top: -1em;
+    margin-top: 1em;
     margin-bottom: 4em;
-    background-position: bottom left;
+    
     
 }
 
@@ -462,17 +462,16 @@ background: crimson;
 }
 
 #slide-8 h1 {
-    color:blue;
+    color:whitesmoke;
 }
 
 #slide-8 .slide__image {
    
 }
 
-@media (min-width: 1440px) { body { background-color: green; 
+@media screen and (max-width: 479px ) { body { background-color: green; 
     }}
-@media (max-width: 1439px) { body { background-color: lightpink; }}
-/*@media (max-width: 480px) {
+@media (max-width: 479px) {
     body { background-color: cadetblue;} 
-    p {font-size: 30px;}
+    p {font-size: 20px;}
     }
