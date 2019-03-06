@@ -345,16 +345,16 @@ nav {
 
 #slide-4 .slide__text {
     background: rgb(0,0,0, 0.5);
-    position: absolute;
+    position: fixed;
     display: flex;
-    width: 140%;
-    padding: 1em;
+    width: ;
+    padding: -1em;
 }
 
 #smallerp {color: darkturquoise;
     font-weight: 300;
     padding-left: em;
-    font-size-adjust: .1em;
+    font-size-adjust: .5em;
 }
 
 /*Slide 3 Video Start*/
@@ -478,7 +478,7 @@ background: black;
 
 @media screen and (max-width: 479px ) { body { background-color: green; 
     }}
-@media (max-width: 479px) {
+/*@media (max-width: 479px) {
     body { background-color: cadetblue;} 
     p {font-size: 16px;}
     }
