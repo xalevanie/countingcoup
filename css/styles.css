@@ -1,0 +1,79 @@
+
+@import 'semantic';
+@import 'add-to-homescreen';
+
+/* My Styles */
+
+body {
+    margin: 0;
+    padding:0;
+    background-color: black;
+    position: relative;
+    color: white;
+}
+
+h1 {color: white;
+    font-weight: 300;
+    font-size-adjust: auto;
+    margin-top: 0;
+    padding: 5%;
+    text-align: right;
+}
+
+#introphrase {font-size: 8vmin;
+padding:10%;
+margin-top: 0;}
+.bold {font-weight: 600;}
+
+/*Intro section */
+#bgvid {position: fixed;
+    z-index: -100;
+ background: no-repeat;
+}
+video {
+    object-fit: fill;
+}
+
+
+#sec-2 {
+  background-image: linear-gradient(0deg,rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%,rgba(0,0,0,0) 100%);
+    padding: 170px 70px 70px 70px;
+margin-bottom:-20px;}
+img {
+}
+
+
+
+
+/*sizing stuff */
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 0rem;
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 2);
+  }
+}
