@@ -2,6 +2,9 @@
 @import 'semantic';
 @import 'add-to-homescreen';
 
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif; */
+
 /* My Styles */
 
 body {
@@ -10,20 +13,69 @@ body {
     background-color: black;
     position: relative;
     color: white;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: orangered;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 90px;
+}
+
+.navispan {
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
 h1 {color: white;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size-adjust: auto;
     margin-top: 0;
-    padding: 5%;
-    text-align: right;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
 }
 
 #introphrase {font-size: 8vmin;
-padding:10%;
+padding:20% 5% 10% 5%;
 margin-top: 0;}
-.bold {font-weight: 600;}
+.bold {font-weight: 500;
+text-align: right;}
 
 /*Intro section */
 #bgvid {position: fixed;
@@ -32,18 +84,27 @@ margin-top: 0;}
 }
 video {
     object-fit: fill;
+    margin-bottom:-2%;
 }
 
 
 #sec-2 {
   background-image: linear-gradient(0deg,rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%,rgba(0,0,0,0) 100%);
-    padding: 170px 70px 70px 70px;
+    padding: 170px 10px 70px 10px;
 margin-bottom:-20px;}
-img {
+
+#sec-3 {
+    background-color: whitesmoke;
+    color: black;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    margin-bottom: -30px;
 }
+#sec-3 h1{color:darkslategrey; font-weight: 600;}
 
 
-
+/* Box hovering */
+.responsive-image p { color: green;}
 
 /*sizing stuff */
 
@@ -51,15 +112,19 @@ img {
   margin: 0 auto;
   max-width: 1920px;
   padding: 0 0rem;
-    background-image: linear-gradient(to right, red , yellow);
+ 
 }
 
 .responsive-image {
   max-width: 100%;
+    
 }
 .cell img {
   display: block;
 }
+
+
+
 
 @media screen and (min-width: 600px) {
   .grid {
@@ -69,6 +134,7 @@ img {
   }
   .cell {
     width: 50%;
+      background-image: linear-gradient(45deg, darkred , orangered);
   }
 }
 
@@ -76,4 +142,13 @@ img {
   .cell {
     width: calc(100% / 2);
   }
+   
+}
+
+@media screen and (max-width: 720px) {
+     video {
+        object-fit:contain;
+        width: 125%;
+       margin: 0 auto;
+    }
 }
