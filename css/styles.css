@@ -87,6 +87,7 @@ text-align: right;}
 #bgvid {position: fixed;
     z-index: -100;
  background: no-repeat;
+    width: 100%;
     
     
 }
@@ -115,12 +116,14 @@ position: relative;
 margin:auto;
 padding: 42px;}
 
-#sec-2 img {margin: 0;
+#sec-2 img {
     margin-bottom: -100px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .heck {
-    background-color: darkslategrey;;
+    background-color: darkslategrey;
 }
 #sec-3 {
     background-color: whitesmoke;
@@ -179,11 +182,16 @@ padding: 42px;}
     filter:blur(4px) brightness(70%);
     box-shadow:0 0 0px ;
   }
+
+.hovercover h3:hover {
+    transform:scale(1.151);
+    opacity:1;
+}
    
   .hovercover :not(img){
     position:absolute;
     z-index:1;
-    top:20%;
+    top:15%;
     width:100%;
     text-align:center;
     color:#fff;
@@ -192,10 +200,12 @@ padding: 42px;}
   }
   
   .hovercover h3{
-    top:35%;
+    top:45%;
         font-size: .9em;
-      padding:20px;
-      margin: auto;
+      opacity:0;
+      transition: all .5s;
+      margin: 0;
+      
   }
   
   .hovercover:hover :not(img){
