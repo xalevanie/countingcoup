@@ -5,7 +5,7 @@
 /*font-family: 'Oswald', sans-serif;*/
 /*font-family: 'Montserrat', sans-serif; */
 
-/* My Styles */
+/* My Styles background-image: linear-gradient(45deg, darkred , orangered); */
 
 body {
     margin: 0;
@@ -72,7 +72,7 @@ h1 {color: white;
     font-weight: 300;
     font-size-adjust: auto;
     margin-top: 0;
-    padding: 5% 5% 5% 5%;
+    padding: 15% 5% 5% 5%;
     text-align: center;
 }
 
@@ -86,10 +86,13 @@ text-align: right;}
 #bgvid {position: fixed;
     z-index: -100;
  background: no-repeat;
+    
+    
 }
+
 video {
     object-fit: fill;
-    margin-bottom:-2%;
+    
 }
 
 #important {color: orangered;
@@ -105,24 +108,23 @@ font-family: oswald;
   
 margin-bottom:-20px;
 position: relative;
-width: 60%;
-    max-width: 600px;
-margin:auto;}
 
-#sec-2 img {
-    transition: 3s;
+    max-width: 1000px;
+margin:auto;
+padding: 42px;}
+
+#sec-2 img {margin: 0;
     margin-bottom: -100px;
 }
-#sec-2 img:hover {transform:rotate(10deg);
-    
 
+.heck {
+    background-color: darkslategrey;;
 }
-
 #sec-3 {
     background-color: whitesmoke;
     color: black;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 250px;
+    padding-top: 150px;
     margin-bottom: -30px;
 }
 #sec-3 h1{color:darkslategrey; font-weight: 600;}
@@ -179,7 +181,7 @@ margin:auto;}
   .hovercover :not(img){
     position:absolute;
     z-index:1;
-    top:30%;
+    top:20%;
     width:100%;
     text-align:center;
     color:#fff;
@@ -188,7 +190,9 @@ margin:auto;}
   }
   
   .hovercover h3{
-    top:50%
+    top:35%;
+        font-size: .9em;
+      padding:10px;
   }
   
   .hovercover:hover :not(img){
@@ -199,7 +203,7 @@ margin:auto;}
 
 
 .crew-grid {
-    max-width: 70%;
+    max-width: 80%;
 margin: auto;
 padding-top: 90px}
 
@@ -213,8 +217,10 @@ padding-top: 90px}
   }
   .cell {
     width: 50%;
-      background-image: linear-gradient(45deg, darkred , orangered);
+      background-color: black;
   }
+     #important {font-size: 32px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -223,15 +229,17 @@ padding-top: 90px}
   }
     
     .crew-grid {width: 88%;
-    max-width:800px;
+    max-width:900px;
 margin: auto;}
+     #important {font-size: 32px;
+    }
     
-    #important {font-size: 42px;} 
    
 }
 
 @media screen and (max-width: 720px) {
-     video {
+    
+    video {
         object-fit:contain;
         width: 100%;
         
