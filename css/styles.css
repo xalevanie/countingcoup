@@ -5,7 +5,7 @@
 /*font-family: 'Oswald', sans-serif;*/
 /*font-family: 'Montserrat', sans-serif; */
 
-/* My Styles background-image: linear-gradient(45deg, darkred , orangered); */
+/* My Styles  */
 
 body {
     margin: 0;
@@ -92,6 +92,7 @@ text-align: right;}
 
 video {
     object-fit: fill;
+    width: 100%;
     
 }
 
@@ -245,4 +246,15 @@ margin: auto;}
         
        margin: 0 auto;
     }
+}
+
+footer {
+    height: 100px;
+    background-image: linear-gradient(45deg, darkred , orangered);
+    overflow:hidden;
+}
+footer p {
+    padding: 20px;
+    text-decoration-line: underline overline;
+    width:100%;
 }
